@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Adivinanza</title>
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- Enlace a la biblioteca de SweetAlert para alertas personalizadas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <h1>¡Adivina el Número!</h1>
+
+    <!-- Muestra el temporizador en la página -->
+    <p id="timer">Tiempo restante: 30 segundos</p>
+
+    <!-- Entrada para que el usuario adivine el número -->
+    <label for="guess">Adivina el número (entre 1 y 10):</label>
+    <input type="number" id="guess" min="1" max="10">
+
+    <!-- Botón para comprobar la respuesta -->
+    <button onclick="checkGuess()">Comprobar</button>
+
+    <!-- Script externo que contiene la lógica del juego -->
+    <script src="script/script.js" defer></script>
+</body>
+</html>
